@@ -6,6 +6,7 @@ Route::get('/', function() {
     return View::make('index');	
 });
 
+// Lorem Ipsum Generator
 Route::get('/lorem/{size?}', function($size = 1) {
 
   if (Input::has('paragraphCount')) $size = Input::get('paragraphCount');
@@ -16,9 +17,8 @@ Route::get('/lorem/{size?}', function($size = 1) {
 
 });
 
+// Fake User Generator
 Route::get('/userGen/{size?}', function($size = 1) {
-
-  if (Input::get('wantBirthdate') == 'yes') echo "<p>HAVE BDAY</p>";
 
   $userGen = new UserGenerator();
   $wantBirthdate = FALSE;

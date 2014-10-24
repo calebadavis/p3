@@ -1,5 +1,6 @@
 <?php
 
+// A very simple user class, containing just 3 properties w/setters and getters
 class FakeUser {
 
   // Private members
