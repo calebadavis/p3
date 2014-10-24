@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <title>@yield('title','Developer\'s Best Friend')</title>
+    <meta charset='utf-8'>
+    <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='/css/developers_best_friend.css' type='text/css'>
 
-	<title>@yield('title','Developer\'s Best Friend')</title>
-	<meta charset='utf-8'>
+    @yield('head')
 
-	<link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
-	<link rel='stylesheet' href='/css/developers_best_friend.css' type='text/css'>
+  </head>
 
-	@yield('head')
+  <body>
+    <h1>@yield('h1','Developer\'s Best Friend')</h1>
+    <section id='description'><p>@yield('description')</p></section>
+    <a href='/'><img class='logo' src='/images/muscle.png' alt='Muscular Penguin Logo'></a>
 
-	
-</head>
-<body>
+    <a href='https://github.com/calebadavis/p3'>View on Github</a>
 
-        <h1>@yield('h1','Developer\'s Best Friend')</h1>
+    <nav>
+      <ul>
+        <li><a href='/lorem'>Lorem Ipsum Generator</a></li>
+        <li><a href='/userGen'>User Generator</a></li>
+      </ul>
+    </nav>
 
-	<a href='/'><img class='logo' src='/images/muscle.png' alt='Muscular Penguin Logo'></a>
+    @yield('content')
 
-	<a href='https://github.com/calebadavis/p3'>View on Github</a>
+    @yield('body')
 
-	<nav>
-		<ul>
-			<li><a href='/lorem'>Lorem Ipsum Generator</a></li>
-			<li><a href='/userGen'>User Generator</a></li>
-		</ul>
-	</nav>
-	
-	@yield('content')
-
-	@yield('body')
-	
-</body>
+  </body>
 </html>
 
 

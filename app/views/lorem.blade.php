@@ -12,7 +12,13 @@
   Lorem Ipsum Generator
 @stop
 
-@section('content')
+@section('description')
+
+In publishing and graphic design, lorem ipsum is a filler text commonly used to demonstrate the graphic elements of a document or visual presentation. Replacing meaningful content that could be distracting with placeholder text may allow viewers to focus on graphic aspects such as font, typography, and page layout.
+
+@stop
+
+@section('body')
 
   {{ Form::open(array('url' => '/lorem', 'method' => 'GET')) }}
     {{ Form::label('paragraphCount', '# of paragraphs') }}

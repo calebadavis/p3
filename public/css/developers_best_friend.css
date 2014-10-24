@@ -1,3 +1,7 @@
+h1 { 
+  text-align: center;
+}
+
 body {
 	padding:20px;
 }
@@ -27,6 +31,16 @@ a:link, a:visited, a:active, a:hover {
 	color:grey;
 	font-family:consolas;
 }
+
+section#description {
+  display: block;
+  margin: 1em;
+  padding: 1em;
+  border-style: solid;
+  float: left;
+  width: 66%;
+}
+
 
 #name { 
 	font-weight:bold;
