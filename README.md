@@ -12,7 +12,7 @@
 TBD
 
 ## Outside code/resources
-*https://github.com/susanBuck/foobooks.git: Draws heavily from the class 'foobooks' laravel sample app. Much of the route syntax, .css, and blade templates is a direct copy from here.
+https://github.com/susanBuck/foobooks.git: Draws heavily from the lecture example 'foobooks' laravel app. Much of the route syntax, .css, and blade templates are inspired/copied from here.
 
 
 
