@@ -46,10 +46,14 @@ class FakeUser {
   function __construct($name, $attributes) {
     $this->setName($name);
     if ($attributes) {
-      $birthdate = $attributes['birthdate'];
-      $blurb = $attributes['blurb'];
-      if ($birthdate) $this->setBirthdate($birthdate);
-      if ($blurb) $this->setBlurb($blurb);
+      $wantBirthdate = array_key_exists('birthdate', $attributes);
+      $wantBlurb = array_key_exists('blurb', $attributes);
+      if ($wantBirthdate)
+        $birthdate = $attributes['birthdate'];
+      if ($wantBlurb)
+        $blurb = $attributes['blurb'];
+      if ($wantBirthdate) $this->setBirthdate($birthdate);
+      if ($wantBlurb) $this->setBlurb($blurb);
     }
   }
 

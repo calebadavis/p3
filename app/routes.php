@@ -17,17 +17,22 @@ Route::get('/lorem/{size?}', function($size = 1) {
 });
 
 Route::get('/userGen/{size?}', function($size = 1) {
-  $userGen = new UserGenerator();
-  if (Input::has('size')) $size = Input::get('size');
-  $wantBirthdate = 
-    (Input::has('wantBirthdate')) ?
-      Input::get('wantBirthdate') :
-      FALSE;
 
-  $wantBlurb = 
-    (Input::has('wantBlurb')) ?
-      Input::get('wantBlurb') :
-      FALSE;
+  if (Input::get('wantBirthdate') == 'yes') echo "<p>HAVE BDAY</p>";
+
+  $userGen = new UserGenerator();
+  $wantBirthdate = FALSE;
+  $wantBlurb = FALSE;
+
+  if (Input::has('size')) $size = Input::get('size');
+
+  if (Input::has('birthdate')) {
+    if (Input::get('birthdate') == 'yes') $wantBirthdate = TRUE;
+  }
+
+  if (Input::has('blurb')) {
+    if (Input::get('blurb') == 'yes' ) $wantBlurb = TRUE;
+  }
 
   return View::make('usergen')
     ->with('size', $size)
