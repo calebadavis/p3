@@ -21,7 +21,7 @@ User generation (for testing purposes) can be a tedious task. Manual entry of Na
 @section('content')
 
   {{ Form::open(array('url' => '/userGen', 'method' => 'GET')) }}
-    {{ Form::label('userCount', '# of users') }}
+    {{ Form::label('size', '# of users') }}
     {{ Form::input(
          'number', 
          'size', 
