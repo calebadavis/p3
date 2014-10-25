@@ -42,10 +42,10 @@ section#description {
 }
 
 
-#name { 
+p.name { 
 	font-weight:bold;
 }
 
-#blurb {
+p.blurb {
 	font-style:italic;
 }

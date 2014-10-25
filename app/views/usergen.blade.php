@@ -43,9 +43,9 @@ User generation (for testing purposes) can be a tedious task. Manual entry of Na
 
     <section id="generated_text">
     @foreach ($newUsers as $newUser)
-      <p id='name'>{{$newUser->getName()}}</p>
-      <p id='birthdate'>{{$newUser->getBirthdate()}}</p>
-      <p id='blurb'>{{$newUser->getBlurb()}}</p>
+      <p class='name'>{{$newUser->getName()}}</p>
+      <p class='birthdate'>{{$newUser->getBirthdate()}}</p>
+      <p class='blurb'>{{$newUser->getBlurb()}}</p>
     @endforeach
-
+    </section>
 @stop
