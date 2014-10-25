@@ -16,8 +16,6 @@
 
 User generation (for testing purposes) can be a tedious task. Manual entry of Names, addresses, and text can be very, very boring. This utility does it for you!
 
-</section>
-
 @stop
 
 @section('content')
@@ -49,9 +47,5 @@ User generation (for testing purposes) can be a tedious task. Manual entry of Na
       <p id='birthdate'>{{$newUser->getBirthdate()}}</p>
       <p id='blurb'>{{$newUser->getBlurb()}}</p>
     @endforeach
-    </section>
-
-  
-
 
 @stop
