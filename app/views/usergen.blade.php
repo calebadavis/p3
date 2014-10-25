@@ -30,12 +30,15 @@ User generation (for testing purposes) can be a tedious task. Manual entry of Na
     }}
     <br/>
 
+    <label>
     {{ Form::checkbox('birthdate', 'yes', $wantBirthdate) }}
-    {{ Form::label('birthdate', 'Create a Birthdate') }}
+    Create a Birthdate    
+    </label>
     <br/>
-
+    <label>
     {{ Form::checkbox('blurb', 'yes', $wantBlurb) }}
-    {{ Form::label('blurb', 'Create a Blurb') }}
+    Create a Blurb
+    </label>    
     <br/>
 
     {{ Form::submit('Generate'); }}
