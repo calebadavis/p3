@@ -17,7 +17,7 @@
 * https://github.com/susanBuck/foobooks.git: 'Developer's Best Friend' draws heavily from the lecture example 'foobooks' laravel app. Much of the route syntax, .css, and blade templates are inspired/copied from here.
 * https://github.com/samuelwilliams/LoremIpsum: Lorem Ipsum Generator library.
 * https://github.com/fzaninotto/Faker: General purpose dummy data generator
-
+* http://bootswatch.com: Themes with Bootstrap
 
 
 
